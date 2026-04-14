@@ -1,11 +1,29 @@
-@import '@unocss/reset/tailwind.css';
-
 :root {
   color-scheme: light;
 }
 
+@font-face {
+  font-family: 'Consolas';
+  src: url('$lib/assets/fonts/consolas.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LXGW';
+  src: url('$lib/assets/fonts/lxgwscreen.woff2') format('woff2');
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Consolas', 'LXGW', sans-serif;
+  scrollbar-width: none;
+}
+
+html,
 body {
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  background: #f8fafc;
-  color: #0f172a;
+  width: 100vw;
+  height: 100vh;
 }
