@@ -1,5 +1,11 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
   "home_title": "Weather V3",
-  "home_description": "Project scaffold is ready. Start building your pages in src/routes."
+  "home_description": "Project scaffold is ready. Start building your pages in src/routes.",
+  "not_found_badge": "404",
+  "not_found_title": "Page not found",
+  "not_found_description": "The page you requested does not exist or has been moved.",
+  "not_found_action": "Back to home",
+  "error_generic_title": "Something went wrong",
+  "error_generic_description": "An unexpected error occurred. Please try again later."
 }

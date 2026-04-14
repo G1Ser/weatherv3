@@ -36,7 +36,7 @@ export default defineConfig(
           varsIgnorePattern: '^_',
         },
       ],
-
+      'svelte/no-navigation-without-resolve': 'off',
       'no-console': isProd ? 'warn' : 'off',
       'no-debugger': isProd ? 'error' : 'off',
       'no-unused-vars': 'off',

@@ -16,7 +16,11 @@ export default defineConfig(({ mode }) => {
         extractors: [extractorSvelte()],
       }),
       sveltekit(),
-      paraglideVitePlugin({ project: './project.inlang', outdir: './src/lib/paraglide' }),
+      paraglideVitePlugin({
+        project: './project.inlang',
+        outdir: './src/lib/paraglide',
+        strategy: ['url', 'cookie', 'globalVariable', 'baseLocale'],
+      }),
       isDev && codeInspectorPlugin({ bundler: 'vite' }),
     ].filter(Boolean),
   };

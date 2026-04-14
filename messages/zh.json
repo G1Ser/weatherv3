@@ -1,5 +1,11 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
   "home_title": "Weather V3",
-  "home_description": "项目脚手架已就绪，你可以从 src/routes 开始开发页面。"
+  "home_description": "项目脚手架已就绪，你可以从 src/routes 开始开发页面。",
+  "not_found_badge": "404",
+  "not_found_title": "页面不存在",
+  "not_found_description": "你访问的页面不存在，或已被移动到其他位置。",
+  "not_found_action": "返回首页",
+  "error_generic_title": "页面出现错误",
+  "error_generic_description": "发生了未预期的错误，请稍后重试。"
 }
