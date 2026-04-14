@@ -1,0 +1,324 @@
+{
+  "zh": {
+    "metadata": {
+      "tag": "0e8f7855005b9bbd04a95d752c453ccc179ea6afecd1fe03b00ee7da6cf7ae00"
+    },
+    "indexes": [
+      {
+        "code": "cn-mee",
+        "name": "AQI (CN)",
+        "aqi": 72,
+        "aqiDisplay": "72",
+        "level": "2",
+        "category": "良",
+        "color": {
+          "red": 255,
+          "green": 255,
+          "blue": 0,
+          "alpha": 1
+        },
+        "primaryPollutant": {
+          "code": "pm10",
+          "name": "PM 10",
+          "fullName": "颗粒物（粒径小于等于10µm）"
+        },
+        "health": {
+          "effect": "空气质量可接受，但某些污染物可能对极少数异常敏感人群健康有较弱影响。",
+          "advice": {
+            "generalPopulation": "一般人群可正常活动。",
+            "sensitivePopulation": "极少数异常敏感人群应减少户外活动。"
+          }
+        }
+      }
+    ],
+    "pollutants": [
+      {
+        "code": "pm2p5",
+        "name": "PM 2.5",
+        "fullName": "颗粒物（粒径小于等于2.5µm）",
+        "concentration": {
+          "value": 41,
+          "unit": "μg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 58,
+            "aqiDisplay": "58"
+          }
+        ]
+      },
+      {
+        "code": "pm10",
+        "name": "PM 10",
+        "fullName": "颗粒物（粒径小于等于10µm）",
+        "concentration": {
+          "value": 93.57,
+          "unit": "μg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 72,
+            "aqiDisplay": "72"
+          }
+        ]
+      },
+      {
+        "code": "no2",
+        "name": "NO2",
+        "fullName": "二氧化氮",
+        "concentration": {
+          "value": 26.57,
+          "unit": "μg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 14,
+            "aqiDisplay": "14"
+          }
+        ]
+      },
+      {
+        "code": "o3",
+        "name": "O3",
+        "fullName": "臭氧",
+        "concentration": {
+          "value": 100.57,
+          "unit": "μg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 32,
+            "aqiDisplay": "32"
+          }
+        ]
+      },
+      {
+        "code": "so2",
+        "name": "SO2",
+        "fullName": "二氧化硫",
+        "concentration": {
+          "value": 6.43,
+          "unit": "μg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 3,
+            "aqiDisplay": "3"
+          }
+        ]
+      },
+      {
+        "code": "co",
+        "name": "CO",
+        "fullName": "一氧化碳",
+        "concentration": {
+          "value": 0.65,
+          "unit": "mg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 7,
+            "aqiDisplay": "7"
+          }
+        ]
+      }
+    ],
+    "stations": [
+      {
+        "id": "P58655",
+        "name": "万寿西宫"
+      },
+      {
+        "id": "P59067",
+        "name": "天坛"
+      },
+      {
+        "id": "P58911",
+        "name": "海淀区万柳"
+      },
+      {
+        "id": "P52102",
+        "name": "东四"
+      },
+      {
+        "id": "P5257",
+        "name": "官园"
+      },
+      {
+        "id": "P57961",
+        "name": "奥体中心"
+      },
+      {
+        "id": "P56750",
+        "name": "农展馆"
+      }
+    ]
+  },
+  "en": {
+    "metadata": {
+      "tag": "0e8f7855005b9bbd04a95d752c453ccc179ea6afecd1fe03b00ee7da6cf7ae00"
+    },
+    "indexes": [
+      {
+        "code": "cn-mee",
+        "name": "AQI (CN)",
+        "aqi": 72,
+        "aqiDisplay": "72",
+        "level": "2",
+        "category": "Good",
+        "color": {
+          "red": 255,
+          "green": 255,
+          "blue": 0,
+          "alpha": 1
+        },
+        "primaryPollutant": {
+          "code": "pm10",
+          "name": "PM 10",
+          "fullName": "Inhalable particulate matter (<10µm)"
+        },
+        "health": {
+          "effect": "Some pollutants may slightly affect very few hypersensitive individuals.",
+          "advice": {
+            "generalPopulation": "General population can continue their outdoor activities normally.",
+            "sensitivePopulation": "Only very few hypersensitive people should reduce outdoor activities."
+          }
+        }
+      }
+    ],
+    "pollutants": [
+      {
+        "code": "pm2p5",
+        "name": "PM 2.5",
+        "fullName": "Fine particulate matter (<2.5µm)",
+        "concentration": {
+          "value": 41,
+          "unit": "μg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 58,
+            "aqiDisplay": "58"
+          }
+        ]
+      },
+      {
+        "code": "pm10",
+        "name": "PM 10",
+        "fullName": "Inhalable particulate matter (<10µm)",
+        "concentration": {
+          "value": 93.57,
+          "unit": "μg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 72,
+            "aqiDisplay": "72"
+          }
+        ]
+      },
+      {
+        "code": "no2",
+        "name": "NO2",
+        "fullName": "Nitrogen dioxide",
+        "concentration": {
+          "value": 26.57,
+          "unit": "μg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 14,
+            "aqiDisplay": "14"
+          }
+        ]
+      },
+      {
+        "code": "o3",
+        "name": "O3",
+        "fullName": "Ozone",
+        "concentration": {
+          "value": 100.57,
+          "unit": "μg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 32,
+            "aqiDisplay": "32"
+          }
+        ]
+      },
+      {
+        "code": "so2",
+        "name": "SO2",
+        "fullName": "Sulfur dioxide",
+        "concentration": {
+          "value": 6.43,
+          "unit": "μg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 3,
+            "aqiDisplay": "3"
+          }
+        ]
+      },
+      {
+        "code": "co",
+        "name": "CO",
+        "fullName": "Carbon monoxide",
+        "concentration": {
+          "value": 0.65,
+          "unit": "mg/m³"
+        },
+        "subIndexes": [
+          {
+            "code": "cn-mee",
+            "aqi": 7,
+            "aqiDisplay": "7"
+          }
+        ]
+      }
+    ],
+    "stations": [
+      {
+        "id": "P58655",
+        "name": "万寿西宫"
+      },
+      {
+        "id": "P59067",
+        "name": "天坛"
+      },
+      {
+        "id": "P58911",
+        "name": "海淀区万柳"
+      },
+      {
+        "id": "P52102",
+        "name": "东四"
+      },
+      {
+        "id": "P5257",
+        "name": "官园"
+      },
+      {
+        "id": "P57961",
+        "name": "奥体中心"
+      },
+      {
+        "id": "P56750",
+        "name": "农展馆"
+      }
+    ]
+  }
+}
