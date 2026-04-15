@@ -48,5 +48,9 @@
   "engines": {
     "bun": ">=1.0.0",
     "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "echarts": "6.0.0",
+    "ky": "2.0.1"
   }
 }
