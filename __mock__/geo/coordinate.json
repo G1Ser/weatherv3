@@ -1,0 +1,34 @@
+﻿{
+  "data": [
+    {
+      "id": "430728805",
+      "lat": 40.02693907316662,
+      "lon": 116.23325262900065,
+      "name": "Haidian District",
+      "name_zh": "海淀区",
+      "adcode": "110108",
+      "display": "China, Beijing, Haidian District",
+      "display_zh": "中国，北京市，海淀区"
+    },
+    {
+      "id": "391080742",
+      "lat": 39.91187589459959,
+      "lon": 116.36562919413204,
+      "name": "Xicheng District",
+      "name_zh": "西城区",
+      "adcode": "110102",
+      "display": "China, Beijing, Xicheng District",
+      "display_zh": "中国，北京市，西城区"
+    },
+    {
+      "id": "205591541",
+      "lat": 39.9069176,
+      "lon": 116.6516918,
+      "name": "Tongzhou District",
+      "name_zh": "通州区",
+      "adcode": "110112",
+      "display": "China, Beijing, Tongzhou District",
+      "display_zh": "中国，北京市，通州区"
+    }
+  ]
+}

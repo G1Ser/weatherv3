@@ -1,0 +1,37 @@
+﻿{
+  "daily": [
+    {
+      "date": "2026-04-15",
+      "type": "5",
+      "name": "UV Index",
+      "name_zh": "紫外线指数",
+      "level": "2",
+      "category": "Moderate",
+      "category_zh": "中等",
+      "text": "Use sunscreen SPF30+ when outdoors around noon.",
+      "text_zh": "中午外出建议涂抹 SPF30+ 防晒霜。"
+    },
+    {
+      "date": "2026-04-15",
+      "type": "1",
+      "name": "Sport Index",
+      "name_zh": "运动指数",
+      "level": "1",
+      "category": "Good",
+      "category_zh": "适宜",
+      "text": "Great for jogging and cycling, stay hydrated.",
+      "text_zh": "适合慢跑和骑行，注意补水。"
+    },
+    {
+      "date": "2026-04-15",
+      "type": "3",
+      "name": "Clothing",
+      "name_zh": "穿衣指数",
+      "level": "2",
+      "category": "Light Jacket",
+      "category_zh": "薄外套",
+      "text": "A light jacket is recommended for morning and evening.",
+      "text_zh": "早晚稍凉，建议携带轻薄外套。"
+    }
+  ]
+}

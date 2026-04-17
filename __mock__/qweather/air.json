@@ -1,0 +1,51 @@
+﻿{
+  "indexes": [
+    {
+      "code": "cn-mee",
+      "name": "AQI (CN)",
+      "aqi": 72,
+      "aqiDisplay": "72",
+      "level": "2",
+      "category": "Good",
+      "category_zh": "良",
+      "primaryPollutant": {
+        "code": "pm10",
+        "name": "PM10"
+      }
+    }
+  ],
+  "pollutants": [
+    {
+      "code": "pm2p5",
+      "name": "PM2.5",
+      "concentration": {
+        "value": 41,
+        "unit": "μg/m³"
+      }
+    },
+    {
+      "code": "pm10",
+      "name": "PM10",
+      "concentration": {
+        "value": 93.57,
+        "unit": "μg/m³"
+      }
+    },
+    {
+      "code": "no2",
+      "name": "NO2",
+      "concentration": {
+        "value": 26.57,
+        "unit": "μg/m³"
+      }
+    },
+    {
+      "code": "o3",
+      "name": "O3",
+      "concentration": {
+        "value": 100.57,
+        "unit": "μg/m³"
+      }
+    }
+  ]
+}
