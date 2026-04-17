@@ -1,26 +1,63 @@
-<script lang="ts">
+﻿<script lang="ts">
   import { m } from '$lib/paraglide/messages.js';
+  import type { Lang, LifeIndexItem } from '$lib/api/weather';
 
-  const indices = [
+  interface Props {
+    indices?: LifeIndexItem[];
+    locale?: Lang;
+  }
+
+  let { indices = [], locale = 'en' }: Props = $props();
+
+  const fallback: LifeIndexItem[] = [
     {
-      label: m.uv_index(),
-      value: 'Moderate',
-      desc: 'Use sunscreen SPF30+, avoid long noon exposure',
-      valueColor: 'var(--text-value)',
+      date: '2026-04-15',
+      type: '5',
+      name: 'UV Index',
+      name_zh: '紫外线指数',
+      level: '2',
+      category: 'Moderate',
+      category_zh: '中等',
+      text: 'Use sunscreen SPF30+ when outdoors around noon.',
+      text_zh: '中午外出建议涂抹 SPF30+ 防晒霜。',
     },
     {
-      label: m.sport_index(),
-      value: 'Good',
-      desc: 'Great for jogging and cycling, keep hydrated',
-      valueColor: 'var(--life-good)',
+      date: '2026-04-15',
+      type: '1',
+      name: 'Sport Index',
+      name_zh: '运动指数',
+      level: '1',
+      category: 'Good',
+      category_zh: '适宜',
+      text: 'Great for jogging and cycling, stay hydrated.',
+      text_zh: '适合慢跑和骑行，注意补水。',
     },
     {
-      label: m.clothing(),
-      value: 'Jacket',
-      desc: 'Morning breeze is cool, carry a light layer',
-      valueColor: 'var(--text-value)',
+      date: '2026-04-15',
+      type: '3',
+      name: 'Clothing',
+      name_zh: '穿衣指数',
+      level: '2',
+      category: 'Light Jacket',
+      category_zh: '薄外套',
+      text: 'A light jacket is recommended for morning and evening.',
+      text_zh: '早晚稍凉，建议携带轻薄外套。',
     },
   ];
+
+  const list = $derived((indices.length > 0 ? indices : fallback).slice(0, 3));
+
+  function localizedLabel(item: LifeIndexItem) {
+    return locale === 'zh' ? item.name_zh || item.name : item.name;
+  }
+
+  function localizedCategory(item: LifeIndexItem) {
+    return locale === 'zh' ? item.category_zh || item.category : item.category;
+  }
+
+  function localizedText(item: LifeIndexItem) {
+    return locale === 'zh' ? item.text_zh || item.text : item.text;
+  }
 </script>
 
 <div class="life-card card-gradient">
@@ -45,13 +82,13 @@
   </div>
 
   <div class="life-list">
-    {#each indices as idx, i (i)}
+    {#each list as item, i (item.type + i)}
       <div class="life-item">
         <div class="life-item-meta">
-          <span class="life-item-label">{idx.label}</span>
-          <span class="life-item-value" style="color: {idx.valueColor};">{idx.value}</span>
+          <span class="life-item-label">{localizedLabel(item)}</span>
+          <span class="life-item-value">{localizedCategory(item)}</span>
         </div>
-        <span class="life-item-desc">{idx.desc}</span>
+        <span class="life-item-desc">{localizedText(item)}</span>
       </div>
     {/each}
   </div>
@@ -71,9 +108,11 @@
     align-items: center;
     gap: 8px;
   }
+
   .life-icon {
     color: var(--accent-blue);
   }
+
   .life-title {
     font-family: 'Geist', sans-serif;
     font-size: 18px;
@@ -96,23 +135,28 @@
     background: var(--life-item-bg);
     align-items: flex-start;
   }
+
   .life-item-meta {
     display: flex;
     flex-direction: column;
     gap: 2px;
     min-width: 120px;
   }
+
   .life-item-label {
     font-family: var(--font-body);
     font-size: 11px;
     font-weight: 600;
     color: var(--text-muted);
   }
+
   .life-item-value {
     font-family: var(--font-mono);
     font-size: 18px;
     font-weight: 700;
+    color: var(--life-good);
   }
+
   .life-item-desc {
     font-family: var(--font-body);
     font-size: 11px;
@@ -122,7 +166,17 @@
     flex: 1;
   }
 
-  /* Mobile */
+  @media (max-width: 768px) {
+    .life-item {
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .life-item-meta {
+      min-width: 0;
+    }
+  }
+
   @media (max-width: 480px) {
     .life-title {
       font-size: 14px;

@@ -65,6 +65,22 @@
   --aqi-value-good: #2e6c4a;
   --aqi-value-mid: #3e6698;
   --aqi-pollutant-label: #405a83;
+  --aqi-tone-good: #3baf66;
+  --aqi-tone-warn: #d7a13f;
+  --aqi-tone-danger: #d96464;
+  --aqi-ring-track: rgba(111, 145, 196, 0.2);
+  --aqi-ring-border: #d8e4f7;
+  --aqi-ring-core: #f5f8ff;
+  --aqi-ring-accent: #5cae71;
+  --aqi-chart-shell-bg: #f4f8ffbf;
+  --aqi-chart-shell-border: #dae5f7;
+  --aqi-chart-track: rgba(133, 152, 183, 0.18);
+  --aqi-chart-axis: #5f7597;
+  --aqi-chart-value: #4d6390;
+  --aqi-chart-bar-pm25: #63c479;
+  --aqi-chart-bar-pm10: #77d08a;
+  --aqi-chart-bar-o3: #70a9ea;
+  --aqi-chart-bar-no2: #a28cf0;
 
   /* Alert */
   --alert-bg: #fff0f4;
@@ -110,8 +126,19 @@
   --forecast-cond: #54719a;
   --forecast-temp-hi: #3e648f;
   --forecast-temp-lo: #4e7bae;
+  --forecast-temp-range: #4b688f;
   --forecast-line-hi: #ff7a5b;
   --forecast-line-lo: #56bfff;
+  --forecast-line-upper: #a4b5d0;
+  --forecast-line-lower: #4f9eed;
+  --forecast-line-lower-shadow: rgba(79, 158, 237, 0.24);
+  --forecast-line-lower-fill-start: rgba(79, 158, 237, 0.24);
+  --forecast-line-lower-fill-end: rgba(79, 158, 237, 0);
+  --forecast-point-lower-fill: #ffffff;
+  --forecast-point-lower-ring: #4f9eed;
+  --chart-tooltip-bg: rgba(16, 21, 32, 0.94);
+  --chart-tooltip-border: rgba(141, 162, 194, 0.35);
+  --chart-tooltip-text: #eef3ff;
 
   /* Weather icon */
   --weather-icon: #eeb14a;
@@ -184,6 +211,22 @@
   --aqi-value-good: #4ade80;
   --aqi-value-mid: #60a5fa;
   --aqi-pollutant-label: #a3a3a3;
+  --aqi-tone-good: #78d47f;
+  --aqi-tone-warn: #f0b963;
+  --aqi-tone-danger: #f58787;
+  --aqi-ring-track: rgba(84, 96, 122, 0.46);
+  --aqi-ring-border: #2b3650;
+  --aqi-ring-core: #101522;
+  --aqi-ring-accent: #6fcd81;
+  --aqi-chart-shell-bg: #0f1522;
+  --aqi-chart-shell-border: #263149;
+  --aqi-chart-track: rgba(77, 91, 120, 0.33);
+  --aqi-chart-axis: #96a6c5;
+  --aqi-chart-value: #bfd1f5;
+  --aqi-chart-bar-pm25: #78d47f;
+  --aqi-chart-bar-pm10: #88df8f;
+  --aqi-chart-bar-o3: #7ab8ff;
+  --aqi-chart-bar-no2: #aa97f4;
 
   --alert-bg: #2a1418;
   --alert-border: #5a2a35;
@@ -225,8 +268,19 @@
   --forecast-cond: #737373;
   --forecast-temp-hi: #d4d4d4;
   --forecast-temp-lo: #a3a3a3;
+  --forecast-temp-range: #bcc5d7;
   --forecast-line-hi: #ff7a5b;
   --forecast-line-lo: #56bfff;
+  --forecast-line-upper: #8d9ab8;
+  --forecast-line-lower: #6eb7ff;
+  --forecast-line-lower-shadow: rgba(110, 183, 255, 0.32);
+  --forecast-line-lower-fill-start: rgba(64, 114, 166, 0.44);
+  --forecast-line-lower-fill-end: rgba(64, 114, 166, 0);
+  --forecast-point-lower-fill: #101626;
+  --forecast-point-lower-ring: #6eb7ff;
+  --chart-tooltip-bg: rgba(8, 11, 18, 0.96);
+  --chart-tooltip-border: rgba(79, 97, 130, 0.45);
+  --chart-tooltip-text: #f1f5ff;
 
   --weather-icon: #eeb14a;
 

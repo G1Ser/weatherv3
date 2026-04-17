@@ -28,7 +28,6 @@
     "@unocss/extractor-svelte": "66.6.8",
     "@unocss/preset-wind3": "66.6.8",
     "@unocss/reset": "66.6.8",
-    "code-inspector-plugin": "1.5.1",
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-import": "2.32.0",
